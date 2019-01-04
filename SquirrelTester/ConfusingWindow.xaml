@@ -1,0 +1,44 @@
+﻿<Window x:Class="SquirrelTester.ConfusingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wpfanimated="http://wpfanimatedgif.codeplex.com"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SquirrelTester"
+        mc:Ignorable="d"
+        Title="ConfusingWindow" WindowState="Maximized" FontFamily="Snap ITC" ResizeMode="NoResize">
+    <Border>
+        <Grid>
+            <Image Stretch="Fill"
+                   wpfanimated:ImageBehavior.AnimatedSource="C:\Users\jschudel\source\repos\SquirrelTester\SquirrelTester\tenor.gif"
+                   wpfanimated:ImageBehavior.RepeatBehavior="Forever"
+                   wpfanimated:ImageBehavior.AnimateInDesignMode="False"
+                   wpfanimated:ImageBehavior.AutoStart="True"/>
+
+            <Button x:Name="ConfusingButton" Click="ConfusingButton_OnClick" Content="Exit this shit!" FontSize="75" VerticalAlignment="Bottom" Margin="20 20 20 20" HorizontalAlignment="Right">
+                <Button.Effect>
+                    <BlurEffect/>
+                </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#FF4D0000"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="DarkRed"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,8 @@
+﻿2018-12-20 08:29:52> Program: Starting Squirrel Updater: --releasify SquirrelTester.1.1.16.nupkg
+2018-12-20 08:29:52> Program: Bootstrapper EXE found at:C:\Users\jschudel\source\repos\SquirrelTester\packages\squirrel.windows.1.9.0\tools\Setup.exe
+2018-12-20 08:29:52> Program: Creating release package: C:\Users\jschudel\source\repos\SquirrelTester\Releases\SquirrelTester.1.1.16.nupkg
+2018-12-20 08:29:52> ReleasePackage: Creating release package: C:\Users\jschudel\source\repos\SquirrelTester\Releases\SquirrelTester.1.1.16.nupkg => C:\Users\jschudel\source\repos\SquirrelTester\Releases\SquirrelTester-1.1.16-full.nupkg
+2018-12-20 08:29:53> ReleasePackage: Extracting dependent packages: []
+2018-12-20 08:29:53> ReleasePackage: Removing unnecessary data
+2018-12-20 08:29:53> ReleasePackage: No release notes found in C:\Users\jschudel\AppData\Local\SquirrelTemp\tempa\SquirrelTester.nuspec
+2018-12-20 08:29:55> Program: Building embedded zip file for Setup.exe

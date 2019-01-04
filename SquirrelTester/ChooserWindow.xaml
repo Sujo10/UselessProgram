@@ -1,0 +1,27 @@
+﻿<Window x:Class="SquirrelTester.ChooserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SquirrelTester"
+        mc:Ignorable="d"
+        Title="Choose" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\jschudel\source\repos\SquirrelTester\SquirrelTester\graveyard-1-630x480.png"/>
+    </Window.Background>
+
+    <StackPanel>
+
+        <TextBlock Text="Choose..." FontSize="100" FontFamily="Snap ITC" Foreground="DarkRed" Padding="20"/>
+
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="ScaryButton" Click="ScaryButton_OnClick" Content="Scary Button"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" FontSize="25" Height="100" Width="200"  Margin="0 0 20 0"/>
+            <Button x:Name="ConfusingButton" Click="ConfusingButton_OnClick" Content="Confusing Button" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" FontSize="25" Height="100" Width="200"/>
+        </Grid>
+    </StackPanel>
+</Window>
